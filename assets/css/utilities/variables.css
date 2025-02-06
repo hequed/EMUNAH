@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap'); /* ? font-family: "Onest", sans-serif; ONEST */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); /* ? font-family: "Orbitron", sans-serif; ORBITRON */
+
+/* Variables-Colores */
+:root {
+    /* * COLORS */
+    --black: #212121;
+    --soft-black: #323232;
+    --red: #CC085E;
+    --silver: #F2F2F0;
+
+    /* * FONTS */
+    --orbitron: font-family: "Orbitron";    
+    --onest: font-family: "Onest";
+}

@@ -1,0 +1,48 @@
+/* ! UTILITIES */
+@import url(./utilities/reset.css);
+@import url(./utilities/variables.css);
+
+/* * HEADER CONFIGS */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--black);
+    font-family: var(--onest);
+    font-size: 1.2rem;
+}
+
+header a {
+    color: var(--silver);
+    text-decoration: none;
+    position: relative;
+}
+
+header a::after {
+    content: "";
+    background: var(--silver);
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+header a:hover::after {
+    height: calc(100% + 8px)
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
