@@ -19,7 +19,7 @@
     z-index: 0;
     grid-area: 1 / 1 / 7 / 11;
     background-image: url(./../../img/backgrounds/bg-barberpole.jpg);
-    background-color: var(--background-color);
+    background-color: var(--red);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,8 +74,9 @@
         }
 
         img {
-            width: 500px;
-            height: 320px;
+            width: 600px;
+            height: 216px;
+            padding: 40px 0px 0px 40px;
         }
     }
 }
