@@ -1,0 +1,202 @@
+/* ! UTILITIES */
+@import url(./utilities/reset.css);
+@import url(./utilities/variables.css);
+
+/* * HERO CONFIGS */
+
+.panel-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /*clip-path: polygon(0 0, 100% 0, 100% 95%, 75% 100%, 25% 100%, 0 95%);*/
+    background: var(--black);
+}
+
+.panel-1 {
+    position: relative;
+    z-index: 0;
+    grid-area: 1 / 1 / 7 / 11;
+    background-image: url(./../../img/backgrounds/bg-barberpole.jpg);
+    background-color: var(--background-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+
+    .degradado {
+        position: absolute;
+        z-index: -10;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 1) 95%);
+    }
+
+    .textos-panel {
+        margin-top: 120px;
+        padding: 20px;
+
+        h2 {
+            color: var(--silver);
+            /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+            font-size: 2.2rem;
+            z-index: 10;
+            font-weight: 600;
+            /*padding: 40px 40px 0px;*/
+            padding: 40px 0px 0px 40px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        h2:hover {
+            color: var(--red);
+            text-shadow: rgb(255, 255, 255) 1px 0 10px;
+        }
+
+        p {
+            color: var(--silver);
+            text-shadow: rgb(0, 0, 0) 1px 0 10px;
+            margin-top: 5px;
+            padding: 0px 0px 60px 40px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            text-align: left;
+            width: 1000px;
+            z-index: 10;
+        }
+
+        img {
+            width: 500px;
+            height: 320px;
+        }
+    }
+}
+
+
+.panel-2 {
+    position: relative;
+    z-index: 0;
+    grid-area: 7 / 1 / 13 / 6;
+    background-image: url(./../../img/backgrounds/open-bg.jpg);
+    background-color: var(--background-color);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    .degradado {
+        position: absolute;
+        z-index: -10;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 1) 90%);
+    }
+
+    .textos-panel {
+        margin-top: 40px;
+        padding: 20px;
+
+        h2 {
+            color: var(--text-color);
+            /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+            font-size: 2.2rem;
+            z-index: 10;
+            font-weight: 600;
+            padding: 30px 0px 0px 40px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        h2:hover {
+            color: var(--text-color);
+            text-shadow: rgb(255, 255, 255) 1px 0 10px;
+        }
+
+        p {
+            color: var(--text-color);
+            text-shadow: rgb(0, 0, 0) 1px 0 10px;
+            margin-top: 5px;
+            padding: 20px 0px 20px 40px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            text-align: left;
+            width: 700px;
+            z-index: 10;
+        }
+    }
+}
+
+.panel-3 {
+    position: relative;
+    z-index: 0;
+    grid-area: 7 / 6 / 13 / 11;
+    background-image: url(./media/underdog.jpg);
+    /*background-color: var(--background-color);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    .degradado {
+        position: absolute;
+        z-index: -10;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 1) 80%);
+    }
+
+    .textos-panel {
+        margin-top: 40px;
+        padding: 20px;
+
+        h2 {
+            color: var(--text-color);
+            /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+            font-size: 2.2rem;
+            z-index: 10;
+            font-weight: 600;
+            padding: 30px 0px 0px 40px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        h2:hover {
+            color: var(--text-color);
+            text-shadow: rgb(255, 255, 255) 1px 0 10px;
+        }
+
+        p {
+            color: var(--text-color);
+            text-shadow: rgb(0, 0, 0) 1px 0 10px;
+            margin-top: 5px;
+            padding: 20px 0px 20px 40px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            text-align: left;
+            width: 700px;
+            z-index: 10;
+        }
+    }
+}

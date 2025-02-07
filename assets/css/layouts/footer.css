@@ -1,0 +1,77 @@
+/* ! UTILITIES */
+@import url(./utilities/reset.css);
+@import url(./utilities/variables.css);
+
+/* * FOOTER CONFIGS */
+
+footer {
+    text-align: center;
+    background-color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo-adonis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        border-right: thin solid var(--red);
+
+        h2 {
+            text-shadow: white 1px 0 10px;
+        }
+    }
+
+    .contact-info-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        align-content: center;
+
+        i {
+            font-size: 60px;
+        }
+
+        .social-networks {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;
+
+            a {
+                color: var(--red);
+            }
+        }
+    }
+
+    .collab-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        align-content: center;
+
+        i {
+            font-size: 60px;
+            padding: 10px;
+        }
+
+        a {
+            padding-bottom: 30px;
+        }
+    }
+}

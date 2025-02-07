@@ -6,4 +6,14 @@
 
 /* ! LAYOUTS */
 @import url(../css/layouts/header.css);
+@import url(../css/layouts/hero.css);
+@import url(../css/layouts/footer.css);
+
 /* Estilos Globales */
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
